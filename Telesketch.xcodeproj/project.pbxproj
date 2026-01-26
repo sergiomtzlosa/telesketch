@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F3181500AB856EAF4B8E50 /* TSOfflineSketchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B2AEE18948D0B2FDDD1BE1 /* TSOfflineSketchEngine.m */; };
+		05E81E727ABC3C6D7C010766 /* TSImageExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5087DB2E72D25B3F2BF26965 /* TSImageExporter.m */; };
+		08413E6250D4DB5100061A80 /* TSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D77FC5D69168291932EB6E /* TSMainViewController.m */; };
+		0E8DE412B40B6F130FB19489 /* TSIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A412606EF81A6556D10B714 /* TSIconButton.m */; };
+		0EA21F9958E5578F09DB12D6 /* TSStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D02ABD194385C72C0D3D0295 /* TSStrokeRenderer.m */; };
+		12917557DB9BE945F52E56E2 /* TSToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6353B45E67CA780DB74DEDF /* TSToolButton.m */; };
+		150CEB86C733ADEEAE32249E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C64B78576A15E56DB38A1B /* AppKit.framework */; };
+		1B91A424CAA285A62E7E361F /* TSSketchParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD13BF0BED0FA7F4601139F /* TSSketchParserTests.m */; };
+		1ECC83247F92E13199288F1D /* TSHistoryCard.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5A46BE8AC332C003F1F24E /* TSHistoryCard.m */; };
+		2557FE941C25923578F181E6 /* NSColor+TSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EA20DC0EA52A21D999317 /* NSColor+TSHex.m */; };
+		25B15AF290672B9370E919FC /* TSImageTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = B70DE8AF4F300F2DE4F848E9 /* TSImageTracer.m */; };
+		2BD13CB8D5843CC8A2BEED46 /* TSDrawingDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD0C8B018537EDDDA957710 /* TSDrawingDocument.m */; };
+		31C5E303CAF5CCC97341E825 /* TSDrawingSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB118FAD5CF2B0B3708ECA /* TSDrawingSerializationTests.m */; };
+		3470B2F3CC669DBDEC393AE7 /* TSMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E46DC114DDB58B2F2FF63491 /* TSMainMenu.m */; };
+		34D1FE7D0F120A3EE684947C /* TSStageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F64F62D22287A3F7E8387959 /* TSStageView.m */; };
+		506B5C4A7A3A4134F57C6D48 /* TSStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = D5734D4AFDC1E1AA07441D8E /* TSStroke.m */; };
+		517A2860D7FDFF4E5339B4D5 /* TSSketchParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EB87AE263067DED6B5D9AC /* TSSketchParser.m */; };
+		54B8E62B0C6D96E57D786C0B /* TSDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ED47854EAC6D0AD0DCF9 /* TSDrawing.m */; };
+		5966DD1821B3D8CAD155BEAE /* TSTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8FE0C3F2FE7E509CDEFEE /* TSTheme.m */; };
+		5E92034F5042A103CC666333 /* TSActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 784C6A23A020514A543E7040 /* TSActionButton.m */; };
+		68215AB818249CCBA2D650CD /* TSKnobView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF47364B9BDFCC23D0FAEE7 /* TSKnobView.m */; };
+		6F03EC3556B34212E65B76A5 /* NSColor+TSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EA20DC0EA52A21D999317 /* NSColor+TSHex.m */; };
+		740DFF13B07C62E41AA9502A /* TSStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = D5734D4AFDC1E1AA07441D8E /* TSStroke.m */; };
+		7D79597AA64DACBE48FE0C82 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D62067866F0631B8570086D /* UniformTypeIdentifiers.framework */; };
+		7E9C2479AB774665D7AE4ED7 /* TSSketchParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EB87AE263067DED6B5D9AC /* TSSketchParser.m */; };
+		86F4BD278B91D34E9B9CE8F6 /* TSVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C271142B8FF1CE2F03A8B6 /* TSVertex.m */; };
+		8766B19F9A75072C71620E91 /* TSDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0E2155427DA143D1545AA3 /* TSDeviceView.m */; };
+		8A5D053759048D9391C79B3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA53CDA1A9835914BCBAD8 /* main.m */; };
+		8D6231234CD65DC78B8C6F34 /* TSImageExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5087DB2E72D25B3F2BF26965 /* TSImageExporter.m */; };
+		8DE8009214F060651522300B /* TSColorSwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E49863A3B7A6AAFBE993C812 /* TSColorSwatch.m */; };
+		9346684F81A955190734EAE3 /* TSDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ED47854EAC6D0AD0DCF9 /* TSDrawing.m */; };
+		94F028430DAF18DDB6C3D0DE /* TSStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D02ABD194385C72C0D3D0295 /* TSStrokeRenderer.m */; };
+		95C06F2A570AB3820ABFBE68 /* TSPromptField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A76227ECFF58B36A9118191 /* TSPromptField.m */; };
+		96EE7934A77120E67B2055BA /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 65FC6BE51BB2DC4B289DE04E /* AppIcon.icns */; };
+		9F7EEB846DB2D6D1E2C17191 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B85CC06DAC5D70D5A62F62 /* Vision.framework */; };
+		A545C521A86CB67EAFBFBD7A /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B35DC41E390B6BB670042EB /* TSAppDelegate.m */; };
+		A7CFA4F92C0F7A904F1BDB42 /* TSOpenCodeServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45200FC49D18B4DFB8AA0B2F /* TSOpenCodeServiceTests.m */; };
+		AA5BE45E54EB86DAFCC61105 /* TSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F72AF563BFDA14D7AF4540 /* TSMainWindowController.m */; };
+		AF3E02A86DA80291A142EA50 /* TSSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41357C8E6F7827416BCA53 /* TSSettingsWindowController.m */; };
+		B4E71F2B0D9B8E7CD13A0796 /* TSGlassOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD372106D3FF8CF4143109C4 /* TSGlassOverlayView.m */; };
+		BF35F1D791B38F1C7B42CD7D /* TSTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8FE0C3F2FE7E509CDEFEE /* TSTheme.m */; };
+		C57F27B6B460A91AD2F6447C /* TSCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B40F935511A16B3205FE5 /* TSCanvasView.m */; };
+		C8B3E3CF5FE18DD17CC281FE /* TSOpenCodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B3C2ABA47307E92D5472FB /* TSOpenCodeService.m */; };
+		CAB3F3429EF5438B6425EAE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E16401DA1B6FB93DADEDFA21 /* main.m */; };
+		CBA6FADAC36929314D615DA9 /* TSDeveloperHarness.m in Sources */ = {isa = PBXBuildFile; fileRef = 157AB002F75AC54D4E78F793 /* TSDeveloperHarness.m */; };
+		D1EFF113D010FF68238EA8CF /* TSImageTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = B70DE8AF4F300F2DE4F848E9 /* TSImageTracer.m */; };
+		D369E44DE6B68A68B0B10C70 /* TSOfflineSketchEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0112B6B5009DB9D45E450D25 /* TSOfflineSketchEngineTests.m */; };
+		D8F1CBDBF5C43C3D74928B51 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B85CC06DAC5D70D5A62F62 /* Vision.framework */; };
+		E0A4BE12AD26857458D817DA /* TSSketchPromptBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8AAF7CD6CE7BEE4812144 /* TSSketchPromptBuilder.m */; };
+		EBF85C43981F93012C7A1FBF /* TSOpenCodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B3C2ABA47307E92D5472FB /* TSOpenCodeService.m */; };
+		ED35C97D051A55D9D3F0540A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C64B78576A15E56DB38A1B /* AppKit.framework */; };
+		EF8AB6CD6D74330DB0F18920 /* TSImageTracerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E6D364EFD57C1968F3905 /* TSImageTracerTests.m */; };
+		F3DB7279007FE6EB234483C2 /* TSIconRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CB672CF20052B267627AF /* TSIconRenderer.m */; };
+		F4305D9F6CBE4B43F292586F /* TSVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C271142B8FF1CE2F03A8B6 /* TSVertex.m */; };
+		F5BD1ABF7E00BC4C80CBD1EF /* TSOfflineSketchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B2AEE18948D0B2FDDD1BE1 /* TSOfflineSketchEngine.m */; };
+		FC0A1492AAC45548EEA80361 /* TSImageExporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A081614D99C5F15E59A21C /* TSImageExporterTests.m */; };
+		FD8F2EF60192F219889CE736 /* TSSketchPromptBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8AAF7CD6CE7BEE4812144 /* TSSketchPromptBuilder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0112B6B5009DB9D45E450D25 /* TSOfflineSketchEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSOfflineSketchEngineTests.m; sourceTree = "<group>"; };
+		07B3C2ABA47307E92D5472FB /* TSOpenCodeService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSOpenCodeService.m; sourceTree = "<group>"; };
+		08C64B78576A15E56DB38A1B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0B4DA9E238780D4869B3CAD9 /* TSTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTheme.h; sourceTree = "<group>"; };
+		0D05B3564BF96CA13026CB21 /* TSToolButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSToolButton.h; sourceTree = "<group>"; };
+		13A8AAF7CD6CE7BEE4812144 /* TSSketchPromptBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSketchPromptBuilder.m; sourceTree = "<group>"; };
+		157AB002F75AC54D4E78F793 /* TSDeveloperHarness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDeveloperHarness.m; sourceTree = "<group>"; };
+		1E4DD5C53DD047B7C8522D6C /* TSColorSwatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSColorSwatch.h; sourceTree = "<group>"; };
+		271CDB12075FACCF00E8491C /* NSColor+TSHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+TSHex.h"; sourceTree = "<group>"; };
+		2A412606EF81A6556D10B714 /* TSIconButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSIconButton.m; sourceTree = "<group>"; };
+		31EB87AE263067DED6B5D9AC /* TSSketchParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSketchParser.m; sourceTree = "<group>"; };
+		336DA4AFB98C9BD4F809DADC /* TSIconButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSIconButton.h; sourceTree = "<group>"; };
+		34F979B379E4B1DB920BD3F9 /* TSSketchParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSketchParser.h; sourceTree = "<group>"; };
+		379F69278C2BED5D064587F6 /* TSMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainMenu.h; sourceTree = "<group>"; };
+		3A3EA20DC0EA52A21D999317 /* NSColor+TSHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+TSHex.m"; sourceTree = "<group>"; };
+		3DA7F6A9E1F5FD064774DFE7 /* TSSettingsWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSettingsWindowController.h; sourceTree = "<group>"; };
+		3E6352625C464F79111717C5 /* TSOpenCodeService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSOpenCodeService.h; sourceTree = "<group>"; };
+		42AD1F3580E1433D116EA0F3 /* TSDrawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDrawing.h; sourceTree = "<group>"; };
+		45200FC49D18B4DFB8AA0B2F /* TSOpenCodeServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSOpenCodeServiceTests.m; sourceTree = "<group>"; };
+		4611DB101407C82BA52C26C6 /* TSStageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStageView.h; sourceTree = "<group>"; };
+		46B85CC06DAC5D70D5A62F62 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		47DB118FAD5CF2B0B3708ECA /* TSDrawingSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDrawingSerializationTests.m; sourceTree = "<group>"; };
+		49C271142B8FF1CE2F03A8B6 /* TSVertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSVertex.m; sourceTree = "<group>"; };
+		4DE32694624DC6C97A819813 /* TSMainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainWindowController.h; sourceTree = "<group>"; };
+		4FD0C8B018537EDDDA957710 /* TSDrawingDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDrawingDocument.m; sourceTree = "<group>"; };
+		5087DB2E72D25B3F2BF26965 /* TSImageExporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImageExporter.m; sourceTree = "<group>"; };
+		51F8E1DAE1B0A4DA3621204C /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		5D62067866F0631B8570086D /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		5EC514265AA07AA230E1080D /* TSIconRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSIconRenderer.h; sourceTree = "<group>"; };
+		5F2E6D364EFD57C1968F3905 /* TSImageTracerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImageTracerTests.m; sourceTree = "<group>"; };
+		65FC6BE51BB2DC4B289DE04E /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		660F7ADD6E6A026711257D37 /* TSStroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStroke.h; sourceTree = "<group>"; };
+		697B40F935511A16B3205FE5 /* TSCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCanvasView.m; sourceTree = "<group>"; };
+		69BEFAD1BF0A3A27E3598CE8 /* TSActionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSActionButton.h; sourceTree = "<group>"; };
+		6E7CA3BE67BC0CB9302FA1AD /* TSDeveloperHarness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDeveloperHarness.h; sourceTree = "<group>"; };
+		6E8AD9A33BA4AA780E965788 /* TSStrokeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStrokeRenderer.h; sourceTree = "<group>"; };
+		70DA26CD9D793DEC4A1165EF /* TSOfflineSketchEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSOfflineSketchEngine.h; sourceTree = "<group>"; };
+		71647BC2860F6909435EF3C0 /* TSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainViewController.h; sourceTree = "<group>"; };
+		72EA53CDA1A9835914BCBAD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76D059F1EE39A3F1211ECE62 /* TSDrawingDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDrawingDocument.h; sourceTree = "<group>"; };
+		784C6A23A020514A543E7040 /* TSActionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSActionButton.m; sourceTree = "<group>"; };
+		7A76227ECFF58B36A9118191 /* TSPromptField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPromptField.m; sourceTree = "<group>"; };
+		7B35DC41E390B6BB670042EB /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
+		7DBFEB6690896A2013C54519 /* TSVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSVertex.h; sourceTree = "<group>"; };
+		83B2AEE18948D0B2FDDD1BE1 /* TSOfflineSketchEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSOfflineSketchEngine.m; sourceTree = "<group>"; };
+		8603B2B7800160F1599A8377 /* TelesketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelesketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C0ED47854EAC6D0AD0DCF9 /* TSDrawing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDrawing.m; sourceTree = "<group>"; };
+		93A081614D99C5F15E59A21C /* TSImageExporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImageExporterTests.m; sourceTree = "<group>"; };
+		9C0E2155427DA143D1545AA3 /* TSDeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDeviceView.m; sourceTree = "<group>"; };
+		9CF47364B9BDFCC23D0FAEE7 /* TSKnobView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSKnobView.m; sourceTree = "<group>"; };
+		A42B2E5937750352D1068987 /* TelesketchIconGen */ = {isa = PBXFileReference; includeInIndex = 0; path = TelesketchIconGen; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C50B9DB82B1A9BF913C637 /* TSImageExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSImageExporter.h; sourceTree = "<group>"; };
+		A96F2633DF7CE7CD8C809688 /* TSDeviceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDeviceView.h; sourceTree = "<group>"; };
+		AE5DF1472E65D1147758706B /* TSCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSCanvasView.h; sourceTree = "<group>"; };
+		B0086A2B4B805A179F988EF0 /* TSKnobView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKnobView.h; sourceTree = "<group>"; };
+		B70DE8AF4F300F2DE4F848E9 /* TSImageTracer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImageTracer.m; sourceTree = "<group>"; };
+		C6D0D56FBC483D68B00EF2BE /* TSImageTracer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSImageTracer.h; sourceTree = "<group>"; };
+		CB5A46BE8AC332C003F1F24E /* TSHistoryCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHistoryCard.m; sourceTree = "<group>"; };
+		CCD13BF0BED0FA7F4601139F /* TSSketchParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSketchParserTests.m; sourceTree = "<group>"; };
+		CD372106D3FF8CF4143109C4 /* TSGlassOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSGlassOverlayView.m; sourceTree = "<group>"; };
+		CE6CB672CF20052B267627AF /* TSIconRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSIconRenderer.m; sourceTree = "<group>"; };
+		CED6F086FB00ED2798E736BF /* TSHistoryCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHistoryCard.h; sourceTree = "<group>"; };
+		D02ABD194385C72C0D3D0295 /* TSStrokeRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStrokeRenderer.m; sourceTree = "<group>"; };
+		D5734D4AFDC1E1AA07441D8E /* TSStroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStroke.m; sourceTree = "<group>"; };
+		DB41357C8E6F7827416BCA53 /* TSSettingsWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingsWindowController.m; sourceTree = "<group>"; };
+		E0F72AF563BFDA14D7AF4540 /* TSMainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainWindowController.m; sourceTree = "<group>"; };
+		E16401DA1B6FB93DADEDFA21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E46DC114DDB58B2F2FF63491 /* TSMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainMenu.m; sourceTree = "<group>"; };
+		E49863A3B7A6AAFBE993C812 /* TSColorSwatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSColorSwatch.m; sourceTree = "<group>"; };
+		E6353B45E67CA780DB74DEDF /* TSToolButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSToolButton.m; sourceTree = "<group>"; };
+		EBE351233AA07BF1B1C84EBE /* TSPromptField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPromptField.h; sourceTree = "<group>"; };
+		EC75F2B3D90B0BF54451306A /* TSGlassOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSGlassOverlayView.h; sourceTree = "<group>"; };
+		F3D956A3C30D658B6E8B61AC /* Telesketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telesketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D77FC5D69168291932EB6E /* TSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainViewController.m; sourceTree = "<group>"; };
+		F64F62D22287A3F7E8387959 /* TSStageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStageView.m; sourceTree = "<group>"; };
+		F6A8FE0C3F2FE7E509CDEFEE /* TSTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTheme.m; sourceTree = "<group>"; };
+		FEBA97EAF18588D9E21CA57D /* TSSketchPromptBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSketchPromptBuilder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E96BEAB00E33AD7944F21C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F1CBDBF5C43C3D74928B51 /* Vision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CBBE7756DE622764B84260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35C97D051A55D9D3F0540A /* AppKit.framework in Frameworks */,
+				7D79597AA64DACBE48FE0C82 /* UniformTypeIdentifiers.framework in Frameworks */,
+				9F7EEB846DB2D6D1E2C17191 /* Vision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8E76A8FBA1FC8FF11D8293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150CEB86C733ADEEAE32249E /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06F84346B1B58DDEEC2B7852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42AD1F3580E1433D116EA0F3 /* TSDrawing.h */,
+				91C0ED47854EAC6D0AD0DCF9 /* TSDrawing.m */,
+				660F7ADD6E6A026711257D37 /* TSStroke.h */,
+				D5734D4AFDC1E1AA07441D8E /* TSStroke.m */,
+				0B4DA9E238780D4869B3CAD9 /* TSTheme.h */,
+				F6A8FE0C3F2FE7E509CDEFEE /* TSTheme.m */,
+				7DBFEB6690896A2013C54519 /* TSVertex.h */,
+				49C271142B8FF1CE2F03A8B6 /* TSVertex.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23F12E8915897E07D13294C4 /* TelesketchTests */ = {
+			isa = PBXGroup;
+			children = (
+				47DB118FAD5CF2B0B3708ECA /* TSDrawingSerializationTests.m */,
+				93A081614D99C5F15E59A21C /* TSImageExporterTests.m */,
+				5F2E6D364EFD57C1968F3905 /* TSImageTracerTests.m */,
+				0112B6B5009DB9D45E450D25 /* TSOfflineSketchEngineTests.m */,
+				45200FC49D18B4DFB8AA0B2F /* TSOpenCodeServiceTests.m */,
+				CCD13BF0BED0FA7F4601139F /* TSSketchParserTests.m */,
+			);
+			path = TelesketchTests;
+			sourceTree = "<group>";
+		};
+		2E667B67918E10364F222F04 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E16401DA1B6FB93DADEDFA21 /* main.m */,
+				51F8E1DAE1B0A4DA3621204C /* TSAppDelegate.h */,
+				7B35DC41E390B6BB670042EB /* TSAppDelegate.m */,
+				6E7CA3BE67BC0CB9302FA1AD /* TSDeveloperHarness.h */,
+				157AB002F75AC54D4E78F793 /* TSDeveloperHarness.m */,
+				379F69278C2BED5D064587F6 /* TSMainMenu.h */,
+				E46DC114DDB58B2F2FF63491 /* TSMainMenu.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		41D87D88F6B50A46318210FB /* Telesketch */ = {
+			isa = PBXGroup;
+			children = (
+				2E667B67918E10364F222F04 /* App */,
+				6E94DD1C3BAFDB0F9C2C2F16 /* Controllers */,
+				06F84346B1B58DDEEC2B7852 /* Models */,
+				43670B09CCBF7D477B00F5C7 /* Render */,
+				93084D8A0473E062DAA8EE91 /* Resources */,
+				AA3A6FABB5C0FE9B70DBEBB3 /* Services */,
+				900D90DFA291FBADDEBAA4A6 /* Views */,
+			);
+			path = Telesketch;
+			sourceTree = "<group>";
+		};
+		43670B09CCBF7D477B00F5C7 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				271CDB12075FACCF00E8491C /* NSColor+TSHex.h */,
+				3A3EA20DC0EA52A21D999317 /* NSColor+TSHex.m */,
+				6E8AD9A33BA4AA780E965788 /* TSStrokeRenderer.h */,
+				D02ABD194385C72C0D3D0295 /* TSStrokeRenderer.m */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		446968085C21691BDF3C5143 /* IconGen */ = {
+			isa = PBXGroup;
+			children = (
+				72EA53CDA1A9835914BCBAD8 /* main.m */,
+				5EC514265AA07AA230E1080D /* TSIconRenderer.h */,
+				CE6CB672CF20052B267627AF /* TSIconRenderer.m */,
+			);
+			path = IconGen;
+			sourceTree = "<group>";
+		};
+		6D0B3CEB1F8134CC8E75C669 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				446968085C21691BDF3C5143 /* IconGen */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6E94DD1C3BAFDB0F9C2C2F16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76D059F1EE39A3F1211ECE62 /* TSDrawingDocument.h */,
+				4FD0C8B018537EDDDA957710 /* TSDrawingDocument.m */,
+				71647BC2860F6909435EF3C0 /* TSMainViewController.h */,
+				F4D77FC5D69168291932EB6E /* TSMainViewController.m */,
+				4DE32694624DC6C97A819813 /* TSMainWindowController.h */,
+				E0F72AF563BFDA14D7AF4540 /* TSMainWindowController.m */,
+				3DA7F6A9E1F5FD064774DFE7 /* TSSettingsWindowController.h */,
+				DB41357C8E6F7827416BCA53 /* TSSettingsWindowController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C0A495FA37FDA4BC9301E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D956A3C30D658B6E8B61AC /* Telesketch.app */,
+				A42B2E5937750352D1068987 /* TelesketchIconGen */,
+				8603B2B7800160F1599A8377 /* TelesketchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		900D90DFA291FBADDEBAA4A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69BEFAD1BF0A3A27E3598CE8 /* TSActionButton.h */,
+				784C6A23A020514A543E7040 /* TSActionButton.m */,
+				AE5DF1472E65D1147758706B /* TSCanvasView.h */,
+				697B40F935511A16B3205FE5 /* TSCanvasView.m */,
+				1E4DD5C53DD047B7C8522D6C /* TSColorSwatch.h */,
+				E49863A3B7A6AAFBE993C812 /* TSColorSwatch.m */,
+				A96F2633DF7CE7CD8C809688 /* TSDeviceView.h */,
+				9C0E2155427DA143D1545AA3 /* TSDeviceView.m */,
+				EC75F2B3D90B0BF54451306A /* TSGlassOverlayView.h */,
+				CD372106D3FF8CF4143109C4 /* TSGlassOverlayView.m */,
+				CED6F086FB00ED2798E736BF /* TSHistoryCard.h */,
+				CB5A46BE8AC332C003F1F24E /* TSHistoryCard.m */,
+				336DA4AFB98C9BD4F809DADC /* TSIconButton.h */,
+				2A412606EF81A6556D10B714 /* TSIconButton.m */,
+				B0086A2B4B805A179F988EF0 /* TSKnobView.h */,
+				9CF47364B9BDFCC23D0FAEE7 /* TSKnobView.m */,
+				EBE351233AA07BF1B1C84EBE /* TSPromptField.h */,
+				7A76227ECFF58B36A9118191 /* TSPromptField.m */,
+				4611DB101407C82BA52C26C6 /* TSStageView.h */,
+				F64F62D22287A3F7E8387959 /* TSStageView.m */,
+				0D05B3564BF96CA13026CB21 /* TSToolButton.h */,
+				E6353B45E67CA780DB74DEDF /* TSToolButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93084D8A0473E062DAA8EE91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65FC6BE51BB2DC4B289DE04E /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA3A6FABB5C0FE9B70DBEBB3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6C50B9DB82B1A9BF913C637 /* TSImageExporter.h */,
+				5087DB2E72D25B3F2BF26965 /* TSImageExporter.m */,
+				C6D0D56FBC483D68B00EF2BE /* TSImageTracer.h */,
+				B70DE8AF4F300F2DE4F848E9 /* TSImageTracer.m */,
+				70DA26CD9D793DEC4A1165EF /* TSOfflineSketchEngine.h */,
+				83B2AEE18948D0B2FDDD1BE1 /* TSOfflineSketchEngine.m */,
+				3E6352625C464F79111717C5 /* TSOpenCodeService.h */,
+				07B3C2ABA47307E92D5472FB /* TSOpenCodeService.m */,
+				34F979B379E4B1DB920BD3F9 /* TSSketchParser.h */,
+				31EB87AE263067DED6B5D9AC /* TSSketchParser.m */,
+				FEBA97EAF18588D9E21CA57D /* TSSketchPromptBuilder.h */,
+				13A8AAF7CD6CE7BEE4812144 /* TSSketchPromptBuilder.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5875DE96D6A142AB3BE609F = {
+			isa = PBXGroup;
+			children = (
+				41D87D88F6B50A46318210FB /* Telesketch */,
+				23F12E8915897E07D13294C4 /* TelesketchTests */,
+				6D0B3CEB1F8134CC8E75C669 /* Tools */,
+				C55ABD322DA442CC1CB79AB3 /* Frameworks */,
+				7C0A495FA37FDA4BC9301E59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C55ABD322DA442CC1CB79AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08C64B78576A15E56DB38A1B /* AppKit.framework */,
+				5D62067866F0631B8570086D /* UniformTypeIdentifiers.framework */,
+				46B85CC06DAC5D70D5A62F62 /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B56E2BCF1D7FB4124318012 /* TelesketchIconGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9A0A496433814BBB9FF61D /* Build configuration list for PBXNativeTarget "TelesketchIconGen" */;
+			buildPhases = (
+				D9C98D9D829AC50644F2D2BF /* Sources */,
+				ED8E76A8FBA1FC8FF11D8293 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelesketchIconGen;
+			packageProductDependencies = (
+			);
+			productName = TelesketchIconGen;
+			productReference = A42B2E5937750352D1068987 /* TelesketchIconGen */;
+			productType = "com.apple.product-type.tool";
+		};
+		C27C6AB74E2A2B64EBA5F2C7 /* Telesketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753A49855787F213F2CB0C7 /* Build configuration list for PBXNativeTarget "Telesketch" */;
+			buildPhases = (
+				180D5730CB0CDC7FEB30C76C /* Sources */,
+				DBDD696C23CEDBF4A0578419 /* Resources */,
+				52CBBE7756DE622764B84260 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Telesketch;
+			packageProductDependencies = (
+			);
+			productName = Telesketch;
+			productReference = F3D956A3C30D658B6E8B61AC /* Telesketch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3A14F3BE92DCA1BD6CFC7EA /* TelesketchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C057DE293F4C4DFA0CBEDD11 /* Build configuration list for PBXNativeTarget "TelesketchTests" */;
+			buildPhases = (
+				5574319CFBF4FFF43FA0C53D /* Sources */,
+				0E96BEAB00E33AD7944F21C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelesketchTests;
+			packageProductDependencies = (
+			);
+			productName = TelesketchTests;
+			productReference = 8603B2B7800160F1599A8377 /* TelesketchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A1D42EBD3CDE73F3FCA5B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					6B56E2BCF1D7FB4124318012 = {
+						ProvisioningStyle = Manual;
+					};
+					C27C6AB74E2A2B64EBA5F2C7 = {
+						ProvisioningStyle = Manual;
+					};
+					E3A14F3BE92DCA1BD6CFC7EA = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8DE42C2CB4755849FDE5AFCA /* Build configuration list for PBXProject "Telesketch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B5875DE96D6A142AB3BE609F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7C0A495FA37FDA4BC9301E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27C6AB74E2A2B64EBA5F2C7 /* Telesketch */,
+				E3A14F3BE92DCA1BD6CFC7EA /* TelesketchTests */,
+				6B56E2BCF1D7FB4124318012 /* TelesketchIconGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBDD696C23CEDBF4A0578419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EE7934A77120E67B2055BA /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180D5730CB0CDC7FEB30C76C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F03EC3556B34212E65B76A5 /* NSColor+TSHex.m in Sources */,
+				5E92034F5042A103CC666333 /* TSActionButton.m in Sources */,
+				A545C521A86CB67EAFBFBD7A /* TSAppDelegate.m in Sources */,
+				C57F27B6B460A91AD2F6447C /* TSCanvasView.m in Sources */,
+				8DE8009214F060651522300B /* TSColorSwatch.m in Sources */,
+				CBA6FADAC36929314D615DA9 /* TSDeveloperHarness.m in Sources */,
+				8766B19F9A75072C71620E91 /* TSDeviceView.m in Sources */,
+				9346684F81A955190734EAE3 /* TSDrawing.m in Sources */,
+				2BD13CB8D5843CC8A2BEED46 /* TSDrawingDocument.m in Sources */,
+				B4E71F2B0D9B8E7CD13A0796 /* TSGlassOverlayView.m in Sources */,
+				1ECC83247F92E13199288F1D /* TSHistoryCard.m in Sources */,
+				0E8DE412B40B6F130FB19489 /* TSIconButton.m in Sources */,
+				8D6231234CD65DC78B8C6F34 /* TSImageExporter.m in Sources */,
+				D1EFF113D010FF68238EA8CF /* TSImageTracer.m in Sources */,
+				68215AB818249CCBA2D650CD /* TSKnobView.m in Sources */,
+				3470B2F3CC669DBDEC393AE7 /* TSMainMenu.m in Sources */,
+				08413E6250D4DB5100061A80 /* TSMainViewController.m in Sources */,
+				AA5BE45E54EB86DAFCC61105 /* TSMainWindowController.m in Sources */,
+				F5BD1ABF7E00BC4C80CBD1EF /* TSOfflineSketchEngine.m in Sources */,
+				EBF85C43981F93012C7A1FBF /* TSOpenCodeService.m in Sources */,
+				95C06F2A570AB3820ABFBE68 /* TSPromptField.m in Sources */,
+				AF3E02A86DA80291A142EA50 /* TSSettingsWindowController.m in Sources */,
+				7E9C2479AB774665D7AE4ED7 /* TSSketchParser.m in Sources */,
+				FD8F2EF60192F219889CE736 /* TSSketchPromptBuilder.m in Sources */,
+				34D1FE7D0F120A3EE684947C /* TSStageView.m in Sources */,
+				506B5C4A7A3A4134F57C6D48 /* TSStroke.m in Sources */,
+				0EA21F9958E5578F09DB12D6 /* TSStrokeRenderer.m in Sources */,
+				BF35F1D791B38F1C7B42CD7D /* TSTheme.m in Sources */,
+				12917557DB9BE945F52E56E2 /* TSToolButton.m in Sources */,
+				F4305D9F6CBE4B43F292586F /* TSVertex.m in Sources */,
+				CAB3F3429EF5438B6425EAE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5574319CFBF4FFF43FA0C53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2557FE941C25923578F181E6 /* NSColor+TSHex.m in Sources */,
+				54B8E62B0C6D96E57D786C0B /* TSDrawing.m in Sources */,
+				31C5E303CAF5CCC97341E825 /* TSDrawingSerializationTests.m in Sources */,
+				05E81E727ABC3C6D7C010766 /* TSImageExporter.m in Sources */,
+				FC0A1492AAC45548EEA80361 /* TSImageExporterTests.m in Sources */,
+				25B15AF290672B9370E919FC /* TSImageTracer.m in Sources */,
+				EF8AB6CD6D74330DB0F18920 /* TSImageTracerTests.m in Sources */,
+				03F3181500AB856EAF4B8E50 /* TSOfflineSketchEngine.m in Sources */,
+				D369E44DE6B68A68B0B10C70 /* TSOfflineSketchEngineTests.m in Sources */,
+				C8B3E3CF5FE18DD17CC281FE /* TSOpenCodeService.m in Sources */,
+				A7CFA4F92C0F7A904F1BDB42 /* TSOpenCodeServiceTests.m in Sources */,
+				517A2860D7FDFF4E5339B4D5 /* TSSketchParser.m in Sources */,
+				1B91A424CAA285A62E7E361F /* TSSketchParserTests.m in Sources */,
+				E0A4BE12AD26857458D817DA /* TSSketchPromptBuilder.m in Sources */,
+				740DFF13B07C62E41AA9502A /* TSStroke.m in Sources */,
+				94F028430DAF18DDB6C3D0DE /* TSStrokeRenderer.m in Sources */,
+				5966DD1821B3D8CAD155BEAE /* TSTheme.m in Sources */,
+				86F4BD278B91D34E9B9CE8F6 /* TSVertex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C98D9D829AC50644F2D2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DB7279007FE6EB234483C2 /* TSIconRenderer.m in Sources */,
+				8A5D053759048D9391C79B3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F3CF99F582E2CBC1BE8B5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Telesketch/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch;
+				PRODUCT_NAME = Telesketch;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		32D55FE4C167EBC4E7108EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Telesketch/App",
+					"$(SRCROOT)/Telesketch/Models",
+					"$(SRCROOT)/Telesketch/Controllers",
+					"$(SRCROOT)/Telesketch/Views",
+					"$(SRCROOT)/Telesketch/Render",
+					"$(SRCROOT)/Telesketch/Services",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		767E27F714827068D9162387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Telesketch/Models",
+					"$(SRCROOT)/Telesketch/Services",
+					"$(SRCROOT)/Telesketch/Render",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch.tests;
+				PRODUCT_NAME = TelesketchTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		94263905D1BB4BF8E74FB675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Telesketch/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch;
+				PRODUCT_NAME = Telesketch;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9D8D068FB92B9932CB9F9901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Telesketch/App",
+					"$(SRCROOT)/Telesketch/Models",
+					"$(SRCROOT)/Telesketch/Controllers",
+					"$(SRCROOT)/Telesketch/Views",
+					"$(SRCROOT)/Telesketch/Render",
+					"$(SRCROOT)/Telesketch/Services",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9BD04289AAD60DA4C96D54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch.icongen;
+				PRODUCT_NAME = TelesketchIconGen;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C30203BE196FF3504497B167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Telesketch/Models",
+					"$(SRCROOT)/Telesketch/Services",
+					"$(SRCROOT)/Telesketch/Render",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch.tests;
+				PRODUCT_NAME = TelesketchTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F458316B5689F7780953F19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.telesketch.icongen;
+				PRODUCT_NAME = TelesketchIconGen;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1753A49855787F213F2CB0C7 /* Build configuration list for PBXNativeTarget "Telesketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94263905D1BB4BF8E74FB675 /* Debug */,
+				1F3CF99F582E2CBC1BE8B5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1A9A0A496433814BBB9FF61D /* Build configuration list for PBXNativeTarget "TelesketchIconGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9BD04289AAD60DA4C96D54B /* Debug */,
+				F458316B5689F7780953F19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8DE42C2CB4755849FDE5AFCA /* Build configuration list for PBXProject "Telesketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D55FE4C167EBC4E7108EF9 /* Debug */,
+				9D8D068FB92B9932CB9F9901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C057DE293F4C4DFA0CBEDD11 /* Build configuration list for PBXNativeTarget "TelesketchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30203BE196FF3504497B167 /* Debug */,
+				767E27F714827068D9162387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A1D42EBD3CDE73F3FCA5B53 /* Project object */;
+}

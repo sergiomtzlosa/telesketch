@@ -1,0 +1,117 @@
+name: Telesketch
+options:
+  bundleIdPrefix: com.sid
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+  xcodeVersion: "27.0"
+  groupSortPosition: top
+
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    CLANG_ENABLE_OBJC_ARC: YES
+    CLANG_ENABLE_MODULES: YES
+    GCC_C_LANGUAGE_STANDARD: gnu17
+    ENABLE_APP_SANDBOX: NO
+    ENABLE_HARDENED_RUNTIME: NO
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: YES
+    HEADER_SEARCH_PATHS:
+      - "$(SRCROOT)/Telesketch/App"
+      - "$(SRCROOT)/Telesketch/Models"
+      - "$(SRCROOT)/Telesketch/Controllers"
+      - "$(SRCROOT)/Telesketch/Views"
+      - "$(SRCROOT)/Telesketch/Render"
+      - "$(SRCROOT)/Telesketch/Services"
+
+targets:
+  Telesketch:
+    type: application
+    platform: macOS
+    sources:
+      - path: Telesketch
+        excludes:
+          - "Resources/Info.plist"
+    settings:
+      base:
+        PRODUCT_NAME: Telesketch
+        PRODUCT_BUNDLE_IDENTIFIER: com.sid.telesketch
+        INFOPLIST_FILE: Telesketch/Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        COMBINE_HIDPI_IMAGES: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+    dependencies:
+      - sdk: AppKit.framework
+      - sdk: UniformTypeIdentifiers.framework
+      - sdk: Vision.framework
+
+  TelesketchTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: TelesketchTests
+      - path: Telesketch/Models
+      - path: Telesketch/Render
+      - path: Telesketch/Services/TSSketchParser.h
+      - path: Telesketch/Services/TSSketchParser.m
+      - path: Telesketch/Services/TSOfflineSketchEngine.h
+      - path: Telesketch/Services/TSOfflineSketchEngine.m
+      - path: Telesketch/Services/TSSketchPromptBuilder.h
+      - path: Telesketch/Services/TSSketchPromptBuilder.m
+      - path: Telesketch/Services/TSImageExporter.h
+      - path: Telesketch/Services/TSImageExporter.m
+      - path: Telesketch/Services/TSImageTracer.h
+      - path: Telesketch/Services/TSImageTracer.m
+      - path: Telesketch/Services/TSOpenCodeService.h
+      - path: Telesketch/Services/TSOpenCodeService.m
+    dependencies:
+      - sdk: Vision.framework
+    settings:
+      base:
+        PRODUCT_NAME: TelesketchTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.sid.telesketch.tests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        # Xcode 27's XCTest is built for macOS 14; keep the app at 13.0.
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        HEADER_SEARCH_PATHS:
+          - "$(SRCROOT)/Telesketch/Models"
+          - "$(SRCROOT)/Telesketch/Services"
+          - "$(SRCROOT)/Telesketch/Render"
+
+  TelesketchIconGen:
+    type: tool
+    platform: macOS
+    sources:
+      - path: Tools/IconGen
+    settings:
+      base:
+        PRODUCT_NAME: TelesketchIconGen
+        PRODUCT_BUNDLE_IDENTIFIER: com.sid.telesketch.icongen
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGNING_ALLOWED: NO
+    dependencies:
+      - sdk: AppKit.framework
+
+schemes:
+  Telesketch:
+    build:
+      targets:
+        Telesketch: all
+        TelesketchTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - TelesketchTests
+  IconGen:
+    build:
+      targets:
+        TelesketchIconGen: all
+    run:
+      config: Release
