@@ -1,0 +1,22 @@
+# Xcode
+build/
+build-icon/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# macOS
+.DS_Store
+._*
+
+# Local editor state
+.vscode/
+.idea/
+
+# Temporary icon exports
+build/AppIcon.iconset/
+build/verified.iconset/
+build/icon/
+.config
